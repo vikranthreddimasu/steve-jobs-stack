@@ -55,6 +55,8 @@ Twelve words or fewer. Names a *value* the reader recognizes, not a category.
 
 Read it aloud. If it stumbles, it isn't right. If it could describe ten other products, it isn't specific enough. The keynote line is the heaviest sentence in the pitch — earn it.
 
+**The line precedes the name.** If the keynote line isn't crisp, no name will save the launch. If the line is crisp, the name often falls out of it. Don't outsource the line to a naming exercise; the line is the message, the name is the label.
+
 ### 2. The three
 
 Three things — not two, not five — that make the product real. Three forces an editorial pass: which third thing earns its place?
@@ -73,6 +75,28 @@ The demo is the proof the keynote line is real. If the demo is hard to write, th
 ### 4. The friend message
 
 The iMessage Vikky would send a friend if he thought they'd want this tomorrow. Three sentences max. Sounds like a person, not marketing. This is the elevator pitch in its truest form — every other format is a translation of it.
+
+## The arc — when the artifact has room to breathe
+
+For anything longer than a tweet — README intro, HN post, demo, talk, landing page — there is a recurring 7-beat shape that does the work. Treat it as the scaffolding the four assets ride on.
+
+1. **The world before.** What does today look like? Place the reader inside the current state so the new thing has something to land against. ("Most MP3 players are big and clunky, or small and useless.") Skipping this is the most common reason a launch reads like a feature list — the reader never enters the story.
+
+2. **Standing.** Only when earned: one sentence on why you specifically. Most pitches should skip this and let the work do the work.
+
+3. **The antagonist.** Name what's broken about today's options. Be specific. ("Look at these phones — half the screen is keypad.") Vague antagonists ("complexity," "manual processes") are weak; named ones are strong. Sometimes the antagonist is the way the reader has been doing it themselves.
+
+4. **The promise.** Three things — *the three* from the four assets. State all three before the reveal. Three forces editorial discipline: which third earns its place?
+
+5. **The reveal + the anchor.** Show the thing. Then find the single physical, visible, or verbal gesture that anchors memory: a manila envelope, a chair, "1,000 songs in your pocket," one screenshot, one line of code that does the impossible. The anchor is what people will remember a year later. Without one, the launch dissolves in 24 hours.
+
+6. **Price last.** If money, effort, or commitment is part of the pitch, it goes at the end, contrasted against what people expected. The reveal is the punchline of a setup the audience didn't realize was building.
+
+7. **"One more thing."** Only when there's a genuine surprise that makes the rest sharper. Most launches don't have one. Don't manufacture one — a fake "one more thing" reads as desperate.
+
+Few pitches land all seven; most land 1, 3, 4, 5 — that's still the spine. Hold all seven in your head so that when you cut, you know what you're cutting.
+
+For worked examples, see `references/keynote-case-studies.md` — six Jobs keynotes broken down to the move that did the load-bearing work.
 
 ## Format playbooks
 
@@ -145,6 +169,12 @@ Structure:
 4. **End**: where to find it. One sentence.
 
 Open *in scene*. Vikky is at his desk, frustrated. Cut to demo. Don't open with "Hi, I'm Vikky and today I'll be showing you Y." That's TED-Talk-for-beginners energy and it kills the attention.
+
+**Find the anchor gesture before writing the script.** Every memorable demo has one specific visible move that *is* the proof — pulling the laptop from the envelope, the chair-and-iPad tableau, the screen suddenly showing the impossible thing. For your demo: what is the single moment, on screen or in the room, that makes the audience lean in? Build the script around that gesture; everything else is setup or follow-through.
+
+**If there are slides, slides are punctuation.** One image per slide, or one phrase in giant type. No bullets. No sentences. If the slide has text the audience reads, you have split their attention — they read instead of listen. Slides remind, they don't explain. The talk lives in your mouth and on the screen behind you; the slide is the silent partner.
+
+**Rehearse until the device disappears.** Run the demo end-to-end at full speed, with the actual product in your hands, until you can do it without looking at the screen. Five times, not once. The morning of, run it again. The smoothness people credit to talent is rehearsal made invisible. The price of skipping rehearsal is always paid live, never on the page.
 
 ### Elevator pitch (when someone asks "what are you working on?")
 

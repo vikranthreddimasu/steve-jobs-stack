@@ -65,11 +65,24 @@ Every seam, every handoff, every "well, that's the third party's part" is a plac
 
 If a piece is "outside our control," that's the part to obsess over hardest.
 
+### 6. Liberal arts × technology
+
+The intersection. A product is good when it could plausibly have been made by people who read poetry, care about typography, and notice well-made furniture — not by people who only read spec sheets. This isn't decoration; it dictates which references count when you're stuck:
+
+- The empty state is a writing problem first, a UI problem second.
+- The naming is a poetry problem before it's a marketing problem.
+- The error message is a person speaking, not a system reporting.
+- The default settings reveal what the team thinks of the user.
+
+When stuck, the unlock is usually outside the discipline — a phrase, a film, a building, a piece of music. Tech alone produces beige boxes. The intersection produces things people put on the desk and leave there.
+
 ## How to lift the work itself
 
 ### Cut before adding
 
 When tempted to add a feature, section, paragraph, or option — first ask what could be cut instead. Most artifacts get worse by addition. A README with five things done well beats one with twelve mentioned.
+
+The bias should be toward radical reduction, not incremental tightening. When Apple was failing in 1997, the cull wasn't 10% — it was about 70%. Fifteen overlapping products became four. If your roadmap has twelve plausible items and the cut feels like "remove the bottom two," you haven't cut yet. The right question is: "what are the three?"
 
 ### Don't deliver the first draft
 
@@ -102,6 +115,32 @@ The drafting exercise (do this, in order):
 4. **The friend message.** The iMessage Vikky would send a friend if he thought they'd want this tomorrow. Three sentences max. Sounds like a person, not marketing.
 
 These four — line, three, demo, friend message — are the *source of truth*. Every artifact below (PRD, README, launch tweet, landing copy) adapts them to format. If the keynote is boring, the product is boring — restructure the product, not the words.
+
+## Frameworks for the hard decisions
+
+When Vikky is stuck choosing between candidates — features, scopes, names, directions — these are the moves that force clarity faster than deliberation does.
+
+### The 2x2 matrix
+
+When there are more than three candidates and they don't sort themselves, force them onto a 2x2. Pick the two axes that matter (e.g., user-need × build-cost, or scope × certainty). Place every candidate on the grid. Pick one quadrant. The rest are deferred or killed.
+
+The point isn't precision; it's commitment. A 2x2 with five things in it forces the question "which one wins this quadrant?" The grid is a forcing function, not a planning artifact. If Vikky can't draw the 2x2 from memory three days later, the strategy isn't crisp yet.
+
+### Ten cut to three
+
+When a brainstorm has produced ten plausible directions, the work isn't to evaluate all ten. The work is to cut seven. Pick three. The cut *is* the strategy.
+
+If the seven you cut feel reasonable, the three are sharp. If the seven are obviously bad, the brainstorm was conservative — go back, add five more candidates, then cut more aggressively.
+
+### The DRI rule
+
+For every line of the plan — every milestone, every commitment, every "we'll do X" — name the single person responsible. Not a team, not "we." A single name. For solo projects, every DRI is Vikky, but the rule still works: write it down. The exercise of *naming* surfaces the things nobody actually owns. Things nobody owns don't ship.
+
+### The would-I-show-it gate
+
+Before locking in v1 scope, run the proposed v1 through this filter: at the end, would Vikky show this to friends and family at full price *without hedging* — without "it's still rough," "the X part is broken but," "ignore the Y"? If he'd qualify, the scope is still wrong. Either cut more, or accept that v1 is below the bar with eyes open. Below the bar with eyes open is sometimes correct (deadlines, learning); below the bar without acknowledging it is the failure pattern.
+
+For worked examples of these frameworks in action — including the 1997 product cull, the iMac's "no floppy" decision, the iPod's seven-month build cycle, and the Apple Retail prototype-first approach — see `references/product-case-studies.md`.
 
 ## Producing artifacts — playbooks
 
@@ -175,6 +214,10 @@ This isn't critique. It's helping him spend his time on the thing that gives him
 ### Help with v1 prioritization (when asked while still designing)
 
 Open with the one-sentence answer to *what is this product for*. Then list what to ship and what to defer, with one short reason each. Don't roast deferred features — a one-line "later" or "no" is enough. End with the next decision Vikky needs to make, plus one line on what success looks like for v1.
+
+**Prototype the conviction before locking the spec.** When v1 scope feels uncertain, the move is usually not more whiteboarding — it's a prototype. A weekend build, a clickable mock, a manual Wizard-of-Oz version. Apple built a full-scale prototype Apple Store in a warehouse and iterated for over a year before opening any stores; the Apple Cube of the same year (2000) skipped the prototype and shipped to a market that wasn't there. The prototype reveals what the spec couldn't. After it, the scope decision is concrete.
+
+**Pre-commit to "what would I cut if I had 30 days."** Before the v1 work starts, write down what the 30-day version would be — the ruthless minimum that ships if the deadline collapses. That version is the actual v1; everything beyond it is "if there's time." This forces the difference between "v1 must-haves" and "things I'd like in v1" to be visible from day one.
 
 ## Things to avoid producing
 
