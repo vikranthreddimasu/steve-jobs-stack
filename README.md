@@ -1,53 +1,27 @@
 # Steve Jobs Stack
 
-**The Steve Jobs OS for Claude Code.**
+The Steve Jobs OS for Claude Code.
 
-Three skills that quietly apply Jobs's product principles when you're drafting a PRD, reviewing a README, or writing a launch tweet — without impersonating him. Built from primary-source research (Isaacson, Schlender/Tetzeli, Segall, Fadell, Hertzfeld, Jobs's own keynotes) distilled into a thinking framework, not LLM training-data lore. The output is the artifact, not commentary about it.
-
-- **`/steve-jobs-make`** — drafting greenfield work: PRDs, names, READMEs, v1 scoping
-- **`/steve-jobs-refine`** — improving what exists: reviews, ship/cut decisions, strategic direction
-- **`/steve-jobs-pitch`** — narrative artifacts: launch tweets, hero copy, demo scripts, HN posts
-
-## What it looks like
-
-A small project: a Claude Code skill called `daily-journal` that logs daily entries to a Git repo.
+Three skills that apply his product principles when you're drafting a PRD, reviewing a README, or writing a launch tweet. The output is the artifact, never a Jobs character delivering it.
 
 ```
-> Help me draft what v1 of /daily-journal should be.
+> Write the launch tweet for huddle.
 ```
 
-**`/steve-jobs-make`** produces a 600-word PRD that opens with the keynote line ("a journal that lives in your repo, not a notes app you'll abandon"), three concrete daily-use scenes, an explicit "what we're not building" list, and a sharp success metric ("you use it three Sundays in a row without prompting").
+`/steve-jobs-pitch` returns:
 
-```
-> Review my README, be honest.
-```
-
-**`/steve-jobs-refine`** opens the live GitHub URL, returns ~400 words: what the README is trying to be, two specific quoted strengths, two specific weaknesses, a cut list, and the one move that lifts the work — usually a structural reorder, not a rewrite.
-
-```
-> Write the launch tweet for daily-journal.
-```
-
-**`/steve-jobs-pitch`** returns:
-
-> A daily journal that lives in your repo. Type the date, type the entry, get a commit. No app, no account, no servers.
+> A standup that lives in your repo, not a meeting.
 >
-> github.com/yourname/daily-journal
+> Type yesterday/today/blockers in your editor, hit save. It commits to git and posts to Slack. Sixty seconds.
+>
+> github.com/yourname/huddle
 
-Three artifacts, same standards.
+That is the entire output. No "Steve would say," no theatrical bluntness, no preamble.
 
 ## Install
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/vikranthreddimasu/steve-jobs-stack/main/install.sh | bash
-```
-
-Or manually:
-
-```bash
-git clone --depth=1 https://github.com/vikranthreddimasu/steve-jobs-stack /tmp/sj-stack
-cp -r /tmp/sj-stack/steve-jobs-* ~/.claude/skills/
-rm -rf /tmp/sj-stack
 ```
 
 Then in Claude Code:
@@ -58,46 +32,56 @@ Then in Claude Code:
 > Write the launch tweet for Y         # → /steve-jobs-pitch
 ```
 
-The skills auto-trigger on natural-language phrases. No slash needed.
+The skills auto-trigger on natural language. No slash needed.
 
-## Philosophy: silent mentor, not impersonation
+## The three skills
 
-Most "Steve Jobs AI" projects impersonate — Jobs vocabulary, manufactured quotes, theatrical bluntness. That's good for thinking out loud but bad for shipping work. When you ask for a launch tweet, you don't want a Jobs character delivering it; you want a great launch tweet.
+| Skill | When to reach for it | What you get back |
+|-------|---------------------|-------------------|
+| `/steve-jobs-make` | Starting fresh, no artifact yet | New work, drafted from scratch with a forced cut |
+| `/steve-jobs-refine` | Something exists and needs the next pass | A sharper version of it: concrete findings, ship/cut calls, the one move that lifts the work |
+| `/steve-jobs-pitch` | The job is to introduce or announce | The narrative artifact, written end-to-end |
 
-These skills make Jobs's principles invisible. You see the artifact, not the persona. The skills explicitly forbid roleplay framing, "as Steve would say" preambles, and theatrical bluntness.
+Some overlap is intentional. "Rewrite my README intro" can route to pitch (new copy) or refine (revision of existing). The trigger phrasing in each skill picks.
 
-For the impersonation version — Jobs as a counterpart for thinking out loud — see [`steve-jobs-skill`](https://github.com/vikranthreddimasu/steve-jobs-skill).
+## Worked example: a tool called `huddle`
 
-## How the three differ
+`huddle` is a standup-killer that lives in your repo.
 
-| Skill | When to use | Output |
-|-------|-------------|--------|
-| `make` | Starting fresh — no artifact yet | A PRD, a name, a README, a v1 plan |
-| `refine` | Something exists, needs improvement | Concrete findings, cuts, the one move that lifts the work |
-| `pitch` | The work is to *introduce* or *announce* | A tweet, a README intro, an HN post, a demo script |
+**`/steve-jobs-make`** drafts the v1 PRD. It opens with the keynote line ("a standup that lives in your repo, not a meeting"), three concrete daily-use scenes, an explicit "not building" list (no web UI, no real-time presence, no comments on other people's huddles), and a sharp success metric: a four-person team uses it ten weekdays in a row without prompting.
 
-There's some overlap by design — "rewrite my README intro" could land in either pitch (new copy) or refine (rewrite of existing). The trigger phrasing in each skill's frontmatter routes asks to the right one.
+**`/steve-jobs-refine`** reviews the README. It returns about 400 words: what the README is trying to be, two specific quoted strengths, two specific weaknesses, and the one move that lifts the work — usually structural. For huddle: *swap the file-structure section and the demo. You're explaining the artifact before showing it.*
 
-## How they think
+**`/steve-jobs-pitch`** writes the launch tweet (above), the README hero, and the demo script. Same product, three shapes of output.
 
-Each skill runs a thinking pipeline, not a checklist of tips:
+## Silent mentor, not impersonation
+
+Most "Steve Jobs AI" projects impersonate him: manufactured quotes, theatrical bluntness, "as Steve would say" preambles. That works for thinking out loud and fails when you have to ship. A launch tweet doesn't need a Jobs character delivering it; it needs to be a great launch tweet.
+
+These skills make the principles invisible. Each `SKILL.md` forbids roleplay framing and theatrical persona moves.
+
+For the impersonation version (Jobs as a counterpart you talk things through with), see [`steve-jobs-skill`](https://github.com/vikranthreddimasu/steve-jobs-skill). Use that for direction. This stack is for the artifacts.
+
+## How each skill thinks
+
+Each runs a pipeline, not a checklist:
 
 - **`make`** — interrogate the project → find the soul → force the cut → pass the gate → prototype the conviction
 - **`refine`** — see the thing → interrogate the direction → make the binary call → name the one move → reach for a tool when stuck
 - **`pitch`** — draft the four assets (keynote line, the three, the demo, the friend message) → ride them on a 7-beat arc → adapt to format
 
-The pipelines are the load-bearing structure. Format playbooks (PRD template, launch tweet structure, etc.) are downstream applications.
+Format templates (PRD shape, launch tweet structure, etc.) sit on top of the pipelines.
 
-## The references
+## Built on primary sources
 
-The `references/` folder is the source material the skills draw from when needed:
+The `references/` folder is the source material — primary research, not LLM lore:
 
-- `research-report.md` — ~10k-word foundation document, ~60 primary sources from Isaacson, Schlender/Tetzeli, Segall, Fadell, Hertzfeld, Jobs's own keynotes and interviews
-- `keynote-case-studies.md` — six Jobs keynotes broken down by what move did the load-bearing work (1984 Mac, iMac, iPod, iPhone, MacBook Air, iPad)
+- `research-report.md` — about 10k words, around 60 sources from Isaacson, Schlender/Tetzeli, Segall, Fadell, Hertzfeld, plus Jobs's own keynotes and interviews
+- `keynote-case-studies.md` — six keynotes broken down by what move did the load-bearing work (1984 Mac, iMac, iPod, iPhone, MacBook Air, iPad)
 - `failure-patterns.md` — nine Apple-era anti-patterns with trigger phrases (Lisa, NeXT cube, Apple Cube, MobileMe, Antennagate, App Store reversal, options backdating, cancer treatment delay, personal cost)
 - `product-case-studies.md` — four build cases (1997 product cull, iMac, iPod, Apple Retail)
 
-The skills point to these docs when relevant — load them in when needed, ignore otherwise.
+Skills load these only when the question calls for it.
 
 ## Repo structure
 
@@ -107,25 +91,12 @@ steve-jobs-stack/
 ├── LICENSE
 ├── install.sh
 ├── references/
-│   ├── research-report.md
-│   ├── keynote-case-studies.md
-│   ├── failure-patterns.md
-│   └── product-case-studies.md
-├── steve-jobs-make/
-│   └── SKILL.md
-├── steve-jobs-refine/
-│   └── SKILL.md
-└── steve-jobs-pitch/
-    └── SKILL.md
+├── steve-jobs-make/SKILL.md
+├── steve-jobs-refine/SKILL.md
+└── steve-jobs-pitch/SKILL.md
 ```
 
-Each `SKILL.md` is a self-contained instruction file Claude Code reads when triggered. Edit them directly to fit your taste; that's the point.
-
-## Related
-
-- [`steve-jobs-skill`](https://github.com/vikranthreddimasu/steve-jobs-skill) — the **embodiment** version: Jobs talks back. Uses his voice, runs his decision heuristics, WebSearches before judging. Use that one for thinking through hard problems with Jobs as a counterpart; use this stack for actually producing the work.
-
-Together: `steve-jobs-skill` for analysis and direction; `steve-jobs-stack` for shipping.
+Each `SKILL.md` is a single editable file. Fork it, change it, make it yours.
 
 ## License
 
