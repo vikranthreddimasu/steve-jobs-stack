@@ -82,8 +82,8 @@ There's some overlap by design — "rewrite my README intro" could land in eithe
 
 Each skill runs a thinking pipeline, not a checklist of tips:
 
-- **`make`** — find the soul → force the cut → pass the gate → prototype the conviction
-- **`refine`** — see the thing → make the binary call → name the one move → reach for a tool when stuck
+- **`make`** — interrogate the project → find the soul → force the cut → pass the gate → prototype the conviction
+- **`refine`** — see the thing → interrogate the direction → make the binary call → name the one move → reach for a tool when stuck
 - **`pitch`** — draft the four assets (keynote line, the three, the demo, the friend message) → ride them on a 7-beat arc → adapt to format
 
 The pipelines are the load-bearing structure. Format playbooks (PRD template, launch tweet structure, etc.) are downstream applications.
