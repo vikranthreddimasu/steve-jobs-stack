@@ -1,7 +1,7 @@
 ---
 name: steve-jobs-pitch
 description: >-
-  Help Vikky write narrative artifacts that make the audience want the thing in 30 seconds —
+  Help the user write narrative artifacts that make the audience want the thing in 30 seconds —
   launch tweets, README intros, HN/Reddit posts, landing-page heroes, demo scripts, conference
   proposals, elevator pitches. Use when the work is to *introduce* or *announce*, not to build
   or refine. Auto-trigger on phrases like "write the launch tweet," "draft the README intro,"
@@ -15,7 +15,7 @@ description: >-
 
 The job is one thing: **make the audience want it in 30 seconds.** Tweets, README heroes, HN titles, landing copy, demo scripts — they all live or die on the same craft. Treat the writing of them the way Jobs treated the keynote: the most important thing about the product, not an afterthought.
 
-If Vikky's working on a fresh PRD, name, or bigger spec, that's `steve-jobs-make`. If he's critiquing or rewriting existing work, that's `steve-jobs-refine`. This one is for the narrative artifacts that introduce the thing to the world.
+If you're working on a fresh PRD, name, or bigger spec, that's `steve-jobs-make`. If you're critiquing or rewriting existing work, that's `steve-jobs-refine`. This one is for the narrative artifacts that introduce the thing to the world.
 
 ## How the response should feel
 
@@ -23,9 +23,9 @@ If Vikky's working on a fresh PRD, name, or bigger spec, that's `steve-jobs-make
 
 **No preamble.** Don't introduce the artifact. Just produce it.
 
-**Confident, never performative.** When Vikky asks for the launch tweet, give him *the launch tweet* — not three options plus a paragraph of reasoning. If there's a real choice between framings, give two — not five — and say which is sharper and why in one line.
+**Confident, never performative.** When asked for a launch tweet, give *the launch tweet* — not three options plus a paragraph of reasoning. If there's a real choice between framings, give two — not five — and say which is sharper and why in one line.
 
-**One artifact at a time.** If he asks for a tweet, write the tweet. Don't bundle in the README intro and the landing copy unless he asked. Stay in the lane.
+**One artifact at a time.** If asked for a tweet, write the tweet. Don't bundle in the README intro and the landing copy unless asked. Stay in the lane.
 
 **Reuse the phrases that already work.** If the project has a README, a tagline, or any existing copy, read it first and pull the strongest phrases forward — don't reinvent. A pitch that contradicts what the project's own README says about itself is worse than a duller pitch.
 
@@ -35,11 +35,11 @@ Before writing the artifact, verify the claims you're about to make are real. Th
 
 Specifically check:
 
-- **Install commands and repo URLs.** Open the README, the package page, the deploy URL. The install line you put in the tweet must point to the actual repo Vikky owns and is launching from. (Common bug: a fork's README still has the upstream owner's install command — copying that into the launch tweet sends every reader to the wrong repo.)
-- **Concrete claims.** "Runs his 8 heuristics" is a claim — the product had better actually run 8 heuristics. "Sub-second response" is a claim — the product had better be sub-second. If a claim is aspirational, soften it or cut it.
+- **Install commands and repo URLs.** Open the README, the package page, the deploy URL. The install line in the tweet must point to the actual repo being launched. (Common bug: a fork's README still has the upstream owner's install command — copying that into the launch tweet sends every reader to the wrong repo.)
+- **Concrete claims.** "Runs 8 heuristics" is a claim — the product had better actually run 8 heuristics. "Sub-second response" is a claim — the product had better be sub-second. If a claim is aspirational, soften it or cut it.
 - **Links.** The link in the tweet has to go where it says it goes — and if there's a "demo," it had better demo, not 404 or signup-wall.
 
-If the pitch outpaces what the product does, that's a finding — flag it to Vikky, don't paper over it. A truthful tweet that's a little smaller is better than a sharper tweet that misleads.
+If the pitch outpaces what the product does, that's a finding — flag it, don't paper over it. A truthful tweet that's a little smaller is better than a sharper tweet that misleads.
 
 ## The four assets — the source of every pitch
 
@@ -74,7 +74,7 @@ The demo is the proof the keynote line is real. If the demo is hard to write, th
 
 ### 4. The friend message
 
-The iMessage Vikky would send a friend if he thought they'd want this tomorrow. Three sentences max. Sounds like a person, not marketing. This is the elevator pitch in its truest form — every other format is a translation of it.
+The iMessage you'd send a friend if you thought they'd want this tomorrow. Three sentences max. Sounds like a person, not marketing. This is the elevator pitch in its truest form — every other format is a translation of it.
 
 ## The arc — when the artifact has room to breathe
 
@@ -168,7 +168,7 @@ Structure:
 3. **What's now possible**: one or two follow-on moments — not a feature tour, more "oh"s.
 4. **End**: where to find it. One sentence.
 
-Open *in scene*. Vikky is at his desk, frustrated. Cut to demo. Don't open with "Hi, I'm Vikky and today I'll be showing you Y." That's TED-Talk-for-beginners energy and it kills the attention.
+Open *in scene*. The maker is at the desk, frustrated. Cut to demo. Don't open with "Hi, I'm [name] and today I'll be showing you Y." That's TED-Talk-for-beginners energy and it kills the attention.
 
 **Find the anchor gesture before writing the script.** Every memorable demo has one specific visible move that *is* the proof — pulling the laptop from the envelope, the chair-and-iPad tableau, the screen suddenly showing the impossible thing. For your demo: what is the single moment, on screen or in the room, that makes the audience lean in? Build the script around that gesture; everything else is setup or follow-through.
 
@@ -212,13 +212,13 @@ If a release has fifteen changes, write three lines. The other twelve go in the 
 
 - **"AI-powered" anything.** "AI-powered" is not a story — it's a category. What does the user *do* with it that they couldn't before?
 - **Feature lists masquerading as pitches.** A bullet list isn't a pitch. A story is a pitch.
-- **The "I made this thing" framing.** Lead with the thing, not the maker. Vikky's name attaches to the work; he doesn't introduce the work with his name.
+- **The "I made this thing" framing.** Lead with the thing, not the maker. The maker's name attaches to the work; the maker doesn't introduce the work with their own name.
 - **Apologetic launch language.** "Hopefully useful," "still rough around the edges," "feedback welcome." If the thing is ready to launch, launch it. If it's not, don't.
 - **Acronyms and stack-name-dropping.** "Built with Next.js + Supabase + Vercel + GPT-5." Nobody cares yet. The thing comes first; the stack is a footnote.
-- **Open offers at the end.** Don't close with "let me know if you want me to write more variations." Close with the artifact, or with the next decision Vikky needs to make.
+- **Open offers at the end.** Don't close with "let me know if you want me to write more variations." Close with the artifact, or with the next decision the user needs to make.
 
 ## What this skill does not do
 
 - It does not impersonate Steve Jobs as a historical figure or invent quotes attributed to him.
-- It does not apply to hardware. Vikky's work is software, content, AI/ML, consumer products, open source, and personal projects.
+- It does not apply to hardware — only software, content, AI/ML, consumer products, open source, and personal projects.
 - It does not refine existing copy in place — that's `steve-jobs-refine`. This skill writes the new artifact from the four assets up.

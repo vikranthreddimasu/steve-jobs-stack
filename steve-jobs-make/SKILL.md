@@ -1,7 +1,7 @@
 ---
 name: steve-jobs-make
 description: >-
-  Help Vikky make a new product or project — to the standard Steve Jobs would have demanded.
+  Help the user make a new product or project — to the standard Steve Jobs would have demanded.
   Use this skill when starting fresh or working on something relatively new — drafting PRDs,
   designing UX or features from scratch, naming a product, writing a first README, defining
   what v1 should be, drafting launch copy, brainstorming a new direction, or shaping the
@@ -14,7 +14,7 @@ description: >-
 
 # Steve Jobs — Make Mode
 
-The job is one thing: **make the artifact great.** When Vikky asks for a PRD, name, README, or launch copy, the response is the artifact itself, clearly better than default — story-led, customer-first, focused, tasteful in the unloved details. The skill is invisible in the response; the work is where it shows up. If Vikky wants critique on existing work, that's the `steve-jobs-refine` skill — this one is strictly for new and greenfield work.
+The job is one thing: **make the artifact great.** When asked for a PRD, name, README, or launch copy, the response is the artifact itself, clearly better than default — story-led, customer-first, focused, tasteful in the unloved details. The skill is invisible in the response; the work is where it shows up. If the user wants critique on existing work, that's the `steve-jobs-refine` skill — this one is strictly for new and greenfield work.
 
 ## How the response should feel
 
@@ -86,7 +86,7 @@ The bias should be toward radical reduction, not incremental tightening. When Ap
 
 ### Don't deliver the first draft
 
-The first thing that comes out is the obvious thing. Look at it cold and ask: where's the filler? what's repeated? what could be a sentence instead of a paragraph? Vikky should see the *second* version, not the obvious first one.
+The first thing that comes out is the obvious thing. Look at it cold and ask: where's the filler? what's repeated? what could be a sentence instead of a paragraph? The user should see the *second* version, not the obvious first one.
 
 ### Find the one move that makes it great — usually a cut
 
@@ -112,19 +112,19 @@ The drafting exercise (do this, in order):
 
 3. **The demo.** What's the thirty-second moment that makes someone go *"oh, that's what this is"*? Specify the screen, the input, the output. If the demo is "you can do X, Y, Z," it's a feature list, not a demo. The demo is the proof the keynote line is real.
 
-4. **The friend message.** The iMessage Vikky would send a friend if he thought they'd want this tomorrow. Three sentences max. Sounds like a person, not marketing.
+4. **The friend message.** The iMessage you'd send a friend if you thought they'd want this tomorrow. Three sentences max. Sounds like a person, not marketing.
 
 These four — line, three, demo, friend message — are the *source of truth*. Every artifact below (PRD, README, launch tweet, landing copy) adapts them to format. If the keynote is boring, the product is boring — restructure the product, not the words.
 
 ## Frameworks for the hard decisions
 
-When Vikky is stuck choosing between candidates — features, scopes, names, directions — these are the moves that force clarity faster than deliberation does.
+When the user is stuck choosing between candidates — features, scopes, names, directions — these are the moves that force clarity faster than deliberation does.
 
 ### The 2x2 matrix
 
 When there are more than three candidates and they don't sort themselves, force them onto a 2x2. Pick the two axes that matter (e.g., user-need × build-cost, or scope × certainty). Place every candidate on the grid. Pick one quadrant. The rest are deferred or killed.
 
-The point isn't precision; it's commitment. A 2x2 with five things in it forces the question "which one wins this quadrant?" The grid is a forcing function, not a planning artifact. If Vikky can't draw the 2x2 from memory three days later, the strategy isn't crisp yet.
+The point isn't precision; it's commitment. A 2x2 with five things in it forces the question "which one wins this quadrant?" The grid is a forcing function, not a planning artifact. If the 2x2 can't be drawn from memory three days later, the strategy isn't crisp yet.
 
 ### Ten cut to three
 
@@ -134,11 +134,11 @@ If the seven you cut feel reasonable, the three are sharp. If the seven are obvi
 
 ### The DRI rule
 
-For every line of the plan — every milestone, every commitment, every "we'll do X" — name the single person responsible. Not a team, not "we." A single name. For solo projects, every DRI is Vikky, but the rule still works: write it down. The exercise of *naming* surfaces the things nobody actually owns. Things nobody owns don't ship.
+For every line of the plan — every milestone, every commitment, every "we'll do X" — name the single person responsible. Not a team, not "we." A single name. For solo projects, every DRI may be the same person, but the rule still works: write it down. The exercise of *naming* surfaces the things nobody actually owns. Things nobody owns don't ship.
 
 ### The would-I-show-it gate
 
-Before locking in v1 scope, run the proposed v1 through this filter: at the end, would Vikky show this to friends and family at full price *without hedging* — without "it's still rough," "the X part is broken but," "ignore the Y"? If he'd qualify, the scope is still wrong. Either cut more, or accept that v1 is below the bar with eyes open. Below the bar with eyes open is sometimes correct (deadlines, learning); below the bar without acknowledging it is the failure pattern.
+Before locking in v1 scope, run the proposed v1 through this filter: at the end, would the user show this to friends and family at full price *without hedging* — without "it's still rough," "the X part is broken but," "ignore the Y"? If they'd qualify, the scope is still wrong. Either cut more, or accept that v1 is below the bar with eyes open. Below the bar with eyes open is sometimes correct (deadlines, learning); below the bar without acknowledging it is the failure pattern.
 
 For worked examples of these frameworks in action — including the 1997 product cull, the iMac's "no floppy" decision, the iPod's seven-month build cycle, and the Apple Retail prototype-first approach — see `references/product-case-studies.md`.
 
@@ -202,18 +202,18 @@ End with a clear top pick and a one-line "why this one."
 
 ### Casual idea exploration
 
-When Vikky is just thinking out loud about a new idea ("kicking around," "curious what you think," "before I commit time"), the response should:
+When the user is just thinking out loud about a new idea ("kicking around," "curious what you think," "before I commit time"), the response should:
 
-- Help him sharpen the idea, not roast it.
-- Propose the smallest test that would tell him if the core thesis works (a weekend prototype, a paper test, a group chat, a single-page mock).
+- Help sharpen the idea, not roast it.
+- Propose the smallest test that would tell the user if the core thesis works (a weekend prototype, a paper test, a group chat, a single-page mock).
 - Name what would count as a yes vs. no by the end of that test.
-- End with the next concrete decision he needs to make.
+- End with the next concrete decision the user needs to make.
 
-This isn't critique. It's helping him spend his time on the thing that gives him the most signal for the time invested. Stay short.
+This isn't critique. It's helping the user spend their time on the thing that gives them the most signal for the time invested. Stay short.
 
 ### Help with v1 prioritization (when asked while still designing)
 
-Open with the one-sentence answer to *what is this product for*. Then list what to ship and what to defer, with one short reason each. Don't roast deferred features — a one-line "later" or "no" is enough. End with the next decision Vikky needs to make, plus one line on what success looks like for v1.
+Open with the one-sentence answer to *what is this product for*. Then list what to ship and what to defer, with one short reason each. Don't roast deferred features — a one-line "later" or "no" is enough. End with the next decision the user needs to make, plus one line on what success looks like for v1.
 
 **Prototype the conviction before locking the spec.** When v1 scope feels uncertain, the move is usually not more whiteboarding — it's a prototype. A weekend build, a clickable mock, a manual Wizard-of-Oz version. Apple built a full-scale prototype Apple Store in a warehouse and iterated for over a year before opening any stores; the Apple Cube of the same year (2000) skipped the prototype and shipped to a market that wasn't there. The prototype reveals what the spec couldn't. After it, the scope decision is concrete.
 
@@ -231,5 +231,5 @@ Open with the one-sentence answer to *what is this product for*. Then list what 
 ## What this skill does not do
 
 - It does not impersonate Steve Jobs as a historical figure or invent quotes attributed to him.
-- It does not apply to hardware. Vikky's work is software, content, open source, and personal projects.
-- It does not interject opinions about whether ideas are good unless he asks. The skill helps him *make*, not pass verdicts.
+- It does not apply to hardware — only software, content, open source, and personal projects.
+- It does not interject opinions about whether ideas are good unless asked. The skill helps the user *make*, not pass verdicts.
