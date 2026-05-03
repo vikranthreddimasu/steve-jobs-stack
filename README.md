@@ -24,6 +24,14 @@ The Steve Jobs Stack is my attempt to make that thinking reusable. Not a persona
 
 ---
 
+## Sibling project
+
+I also maintain [`vikranthreddimasu/steve-jobs-skill`](https://github.com/vikranthreddimasu/steve-jobs-skill), a *persona* skill: ask Jobs a question, get a Jobs-shaped answer (mental models, decision heuristics, expression DNA). My English translation of [`alchaincyf/steve-jobs-skill`](https://github.com/alchaincyf/steve-jobs-skill) by [Huashu (花叔)](https://github.com/alchaincyf), with full credit to the original author.
+
+**This stack is the discipline version:** the principles disappear into your PRDs, reviews, and launch copy. **The skill is the conversational version:** Jobs's voice helps you think out loud about a question. They compose well — use the stack to decide what to build, the skill to think about it.
+
+---
+
 ## Setup
 
 **If you use a coding agent (Claude Code, Cursor, Codex, or similar):** paste this directly into the chat and your agent handles the rest.
@@ -135,14 +143,6 @@ steve-jobs-stack/
 ```
 
 Each skill is a single editable `SKILL.md`. Fork it, tune it, make the discipline fit how you want to work.
-
----
-
-## Related
-
-A different design philosophy on the same lineage:
-
-- [`vikranthreddimasu/steve-jobs-skill`](https://github.com/vikranthreddimasu/steve-jobs-skill) — a *persona* skill that lets your agent analyze problems through Jobs's mental models (focus as saying no, end-to-end control, the death filter, technology × liberal arts). My English translation of [`alchaincyf/steve-jobs-skill`](https://github.com/alchaincyf/steve-jobs-skill) by [Huashu (花叔)](https://github.com/alchaincyf), with full credit to the original author. Where this stack is *Jobs as discipline* (no invented quotes, principles disappear into the work), that one is *Jobs as conversational lens* (mental models applied to your question). They compose well — use the stack to decide what to build, the persona skill to think about it.
 
 ---
 
