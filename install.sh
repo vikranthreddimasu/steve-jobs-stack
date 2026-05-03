@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # Install the Steve Jobs Stack into ~/.agents/skills/ — the universal,
 # harness-agnostic location — and symlink into any AI coding agent
-# installed on this machine (Claude Code, Cursor). Codex gets a wire-up
-# hint instead of an install, since Codex does not auto-load skills.
+# installed on this machine: Claude Code, Cursor, and Codex.
 #
 # Re-runnable. Skill content in the universal location is preserved on
 # subsequent runs; symlinks are refreshed so newly-installed harnesses
@@ -13,6 +12,7 @@ set -euo pipefail
 UNIVERSAL_DIR="${HOME}/.agents/skills"
 CLAUDE_DIR="${HOME}/.claude/skills"
 CURSOR_DIR="${HOME}/.cursor/skills-cursor"
+CODEX_DIR="${HOME}/.codex/skills"
 TMP_DIR="$(mktemp -d)"
 REPO="https://github.com/vikranthreddimasu/steve-jobs-stack"
 SKILLS=(steve-jobs-make steve-jobs-refine steve-jobs-pitch)
@@ -64,17 +64,7 @@ link_into() {
 
 [ -d "${HOME}/.claude" ] && link_into "Claude Code" "$CLAUDE_DIR"
 [ -d "${HOME}/.cursor" ] && link_into "Cursor" "$CURSOR_DIR"
-
-if [ -d "${HOME}/.codex" ] || command -v codex >/dev/null 2>&1; then
-  echo ""
-  echo "Codex detected — no auto-install (Codex does not load skills natively)."
-  echo "Add this to your AGENTS.md or system prompt:"
-  echo ""
-  echo "  When my request fits, read and follow:"
-  for skill in "${SKILLS[@]}"; do
-    echo "    ~/.agents/skills/$skill/SKILL.md"
-  done
-fi
+[ -d "${HOME}/.codex" ]  && link_into "Codex" "$CODEX_DIR"
 
 echo ""
 echo "Done. $copied installed, $preserved preserved."
