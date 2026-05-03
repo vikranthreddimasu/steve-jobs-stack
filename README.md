@@ -105,7 +105,7 @@ Routes to `pitch`. The skill verifies the claims, finds the keynote line, builds
 
 The skills are built on a research base in `references/`:
 
-- `research-report.md` — the core principles: customer experience first, focus, integrated stack, liberal arts plus technology, simplicity, invisible craft, talent density, small teams, DRI ownership, self-cannibalization, keynote craft, taste over data, crisis as clarity, and the limits of conviction.
+- `research-report.md` — the core principles: customer experience first, focus, integrated stack, liberal arts plus technology, simplicity, invisible craft, talent density, small teams, DRI ownership, self-cannibalization, keynote craft, taste over data, crisis as clarity, real artists ship, the people doing the work decide, and the limits of conviction.
 - `product-case-studies.md` — the build decisions: the 1997 product cull, iMac, iPod, Apple Retail.
 - `keynote-case-studies.md` — the launches: Macintosh, iMac, iPod, iPhone, MacBook Air, iPad.
 - `failure-patterns.md` — the traps: Lisa, NeXT cube, Apple Cube, MobileMe, Antennagate, the App Store reversal, options backdating, cancer delay, and the personal-cost pattern.
