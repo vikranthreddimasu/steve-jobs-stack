@@ -34,22 +34,24 @@ I also maintain [`vikranthreddimasu/steve-jobs-skill`](https://github.com/vikran
 
 ## Setup
 
-**If you use a coding agent (Claude Code, Cursor, Codex, or similar):** paste this directly into the chat and your agent handles the rest.
+**One command (recommended).** Installs all three skills into every coding agent you have — Claude Code, Cursor, Codex, OpenCode, and ~50 others — via the [open agent skills CLI](https://github.com/vercel-labs/skills):
+
+```bash
+npx skills add vikranthreddimasu/steve-jobs-stack --all
+```
+
+Re-runnable. Add `-g` for global install across all projects, drop `--all` to choose interactively, or pass `--skill steve-jobs-make` to install just one.
+
+**No terminal? Paste this in your coding agent.** Claude Code, Cursor, and Codex all handle it from there.
 
 ```text
 Install the Steve Jobs Stack from this repo:
 https://github.com/vikranthreddimasu/steve-jobs-stack
 
-Run the install.sh script, then ask me what I am working on.
+Run: npx skills add vikranthreddimasu/steve-jobs-stack --all
+
+Then ask me what I am working on.
 ```
-
-**If you are comfortable in the terminal:** run the installer directly.
-
-```bash
-curl -sSL https://raw.githubusercontent.com/vikranthreddimasu/steve-jobs-stack/main/install.sh | bash
-```
-
-Either way, the installer wires three skills — `steve-jobs-make`, `steve-jobs-refine`, and `steve-jobs-pitch` — into Claude Code, Cursor, and Codex automatically (whichever you have installed). Re-runnable; if a skill already exists, your edits stay.
 
 Once installed, the skills route themselves. Describe what you are working on and the right one takes over. A few prompts to get started:
 
@@ -111,14 +113,13 @@ Routes to `pitch`. The skill verifies the claims, finds the keynote line, builds
 
 ## Source material
 
-The skills are built on a research base in `references/`:
+Each skill bundles the reference file it actually uses, so the research travels with the install:
 
-- `research-report.md` — the core principles: customer experience first, focus, integrated stack, liberal arts plus technology, simplicity, invisible craft, talent density, small teams, DRI ownership, self-cannibalization, keynote craft, taste over data, crisis as clarity, real artists ship, the people doing the work decide, and the limits of conviction.
-- `product-case-studies.md` — the build decisions: the 1997 product cull, iMac, iPod, Apple Retail.
-- `keynote-case-studies.md` — the launches: Macintosh, iMac, iPod, iPhone, MacBook Air, iPad.
-- `failure-patterns.md` — the traps: Lisa, NeXT cube, Apple Cube, MobileMe, Antennagate, the App Store reversal, options backdating, cancer delay, and the personal-cost pattern.
+- `skills/steve-jobs-make/references/product-case-studies.md` — the build decisions: the 1997 product cull, iMac, iPod, Apple Retail.
+- `skills/steve-jobs-refine/references/failure-patterns.md` — the traps: Lisa, NeXT cube, Apple Cube, MobileMe, Antennagate, the App Store reversal, options backdating, cancer delay, and the personal-cost pattern.
+- `skills/steve-jobs-pitch/references/keynote-case-studies.md` — the launches: Macintosh, iMac, iPod, iPhone, MacBook Air, iPad.
 
-The skills do not load all of this every time. They reach for what the work calls for.
+A fourth file, `references/research-report.md`, stays at the repo root as the foundational background — the core principles (customer experience first, focus, integrated stack, liberal arts plus technology, simplicity, invisible craft, talent density, small teams, DRI ownership, self-cannibalization, keynote craft, taste over data, crisis as clarity, real artists ship, the people doing the work decide, and the limits of conviction). Browse it for context; the skills do not load it every time. They reach for what the work calls for.
 
 ---
 
@@ -128,18 +129,21 @@ The skills do not load all of this every time. They reach for what the work call
 steve-jobs-stack/
 ├── README.md
 ├── LICENSE
-├── install.sh
 ├── references/
-│   ├── failure-patterns.md
-│   ├── keynote-case-studies.md
-│   ├── product-case-studies.md
 │   └── research-report.md
-├── steve-jobs-make/
-│   └── SKILL.md
-├── steve-jobs-refine/
-│   └── SKILL.md
-└── steve-jobs-pitch/
-    └── SKILL.md
+└── skills/
+    ├── steve-jobs-make/
+    │   ├── SKILL.md
+    │   └── references/
+    │       └── product-case-studies.md
+    ├── steve-jobs-refine/
+    │   ├── SKILL.md
+    │   └── references/
+    │       └── failure-patterns.md
+    └── steve-jobs-pitch/
+        ├── SKILL.md
+        └── references/
+            └── keynote-case-studies.md
 ```
 
 Each skill is a single editable `SKILL.md`. Fork it, tune it, make the discipline fit how you want to work.
