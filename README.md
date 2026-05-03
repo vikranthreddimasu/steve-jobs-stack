@@ -149,3 +149,7 @@ A different design philosophy on the same lineage:
 ## License
 
 MIT.
+
+---
+
+Built by [Vikranth Reddimasu](https://vikranthreddimasu.xyz).
