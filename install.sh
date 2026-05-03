@@ -52,9 +52,13 @@ link_into() {
     if [ -L "$link" ]; then
       ln -sfn "$src" "$link"
       echo "  $skill — link refreshed"
+    elif [ -d "$link" ] && diff -rq "$src" "$link" >/dev/null 2>&1; then
+      rm -rf "$link"
+      ln -s "$src" "$link"
+      echo "  $skill — legacy copy matched universal source, converted to symlink"
     elif [ -e "$link" ]; then
-      echo "  $skill — directory exists at $link, left alone"
-      echo "    (remove it to let this script symlink to the universal source)"
+      echo "  $skill — local copy differs from universal source, left alone"
+      echo "    (your edits preserved; rm $link and re-run to symlink instead)"
     else
       ln -s "$src" "$link"
       echo "  $skill — linked"
