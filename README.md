@@ -138,6 +138,14 @@ Each skill is a single editable `SKILL.md`. Fork it, tune it, make the disciplin
 
 ---
 
+## Related
+
+A different design philosophy on the same lineage:
+
+- [`vikranthreddimasu/steve-jobs-skill`](https://github.com/vikranthreddimasu/steve-jobs-skill) — a *persona* skill that lets your agent analyze problems through Jobs's mental models (focus as saying no, end-to-end control, the death filter, technology × liberal arts). My English translation of [`alchaincyf/steve-jobs-skill`](https://github.com/alchaincyf/steve-jobs-skill) by [Huashu (花叔)](https://github.com/alchaincyf), with full credit to the original author. Where this stack is *Jobs as discipline* (no invented quotes, principles disappear into the work), that one is *Jobs as conversational lens* (mental models applied to your question). They compose well — use the stack to decide what to build, the persona skill to think about it.
+
+---
+
 ## License
 
 MIT.
