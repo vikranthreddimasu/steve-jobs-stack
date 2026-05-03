@@ -1,22 +1,38 @@
 # Steve Jobs Stack
 
-The Steve Jobs OS for Claude Code.
+**The Steve Jobs OS for AI agents.**
 
-Three skills that apply his product principles when you're drafting a PRD, reviewing a README, or writing a launch tweet. The output is the artifact, never a Jobs character delivering it.
+AI made producing almost free. More code. More PRDs. More variants. More features. More launch copy. The scarce thing now is not output — it is judgment. What is worth making. What to cut. What story to tell. What to refuse.
 
+This stack is an operating system for that. Three skills that turn your coding agent into something closer to a product partner: one for deciding what should exist, one for raising the standard of what does, and one for making the world want it. Built for the people working on AI products, agents, research prototypes, developer tools, open source, and the strange new things AI lets us try.
+
+Not a Steve Jobs chatbot. No invented quotes. No keynote voice. The principles disappear into the work.
+
+## Why I made this
+
+I wanted an AI that thought *with* me, not for me.
+
+Most agent workflows are powerful but shapeless. Ask for an idea, get ten. Ask for a plan, get a long plan. Ask for product feedback, get a polite list of improvements. The model is doing work — it is not applying judgment. It is not asking what should exist, what should be cut, what the user actually feels in the broken moment, or whether the work has a story strong enough to survive contact with the world.
+
+I wanted structure for that. A path.
+
+Steve Jobs became the lens because his transferable skill was not charisma or cruelty. It was taste as an operating system — start with the experience, force the cut, make the product and the story one thing, refuse to hide weak thinking behind more features. He was wrong plenty of times: the Cube, MobileMe, Antennagate, the App Store reversal. Those failure patterns are part of the curriculum, not embarrassments to skip.
+
+This matters most in AI. *AI-powered X* is not a product. A model is not an experience. A clever agent loop is not a reason for anyone to care. The job is to decide what changes for the user when the system exists, and to be honest when it doesn't change anything yet.
+
+The Steve Jobs Stack is my attempt to make that thinking reusable. Not a personality. Not a costume. A small OS for making better things with AI.
+
+## Setup
+
+Paste this into your coding agent. The skills route themselves, so the prompt only has to set the posture.
+
+```text
+Adopt the Steve Jobs Stack as my operating system for product work —
+not a persona, an OS for taste:
+https://github.com/vikranthreddimasu/steve-jobs-stack
+
+Install or read it, then ask me what I am working on.
 ```
-> Write the launch tweet for huddle.
-```
-
-`/steve-jobs-pitch` returns:
-
-> A standup that lives in your repo, not a meeting.
->
-> Type yesterday/today/blockers in your editor, hit save. It commits to git and posts to Slack. Sixty seconds.
->
-> github.com/yourname/huddle
-
-That is the entire output. No "Steve would say," no theatrical bluntness, no preamble.
 
 ## Install
 
@@ -24,79 +40,88 @@ That is the entire output. No "Steve would say," no theatrical bluntness, no pre
 curl -sSL https://raw.githubusercontent.com/vikranthreddimasu/steve-jobs-stack/main/install.sh | bash
 ```
 
-Then in Claude Code:
+The installer puts the three skills in `~/.agents/skills/` — the universal, harness-agnostic location — and symlinks them into Claude Code and Cursor automatically if either is installed. One source of truth, every harness reads from it. Edit `~/.agents/skills/<skill>/SKILL.md` once and every agent sees the change.
 
-```
-> Help me draft a PRD for X            # → /steve-jobs-make
-> Review my README, be honest          # → /steve-jobs-refine
-> Write the launch tweet for Y         # → /steve-jobs-pitch
-```
+If the script finds Codex on your machine, it prints a wire-up hint instead of installing — Codex does not auto-load skills today, so it needs a one-line reference in your `AGENTS.md` to pick them up.
 
-The skills auto-trigger on natural language. No slash needed.
+The script is re-runnable. Skill content is preserved on subsequent runs; symlinks are refreshed so a newly-installed harness gets wired in without touching your edits.
 
 ## The three skills
 
-| Skill | When to reach for it | What you get back |
-|-------|---------------------|-------------------|
-| `/steve-jobs-make` | Starting fresh, no artifact yet | New work, drafted from scratch with a forced cut |
-| `/steve-jobs-refine` | Something exists and needs the next pass | A sharper version of it: concrete findings, ship/cut calls, the one move that lifts the work |
-| `/steve-jobs-pitch` | The job is to introduce or announce | The narrative artifact, written end-to-end |
+The stack is organized around the lifecycle of making anything with AI:
 
-Some overlap is intentional. "Rewrite my README intro" can route to pitch (new copy) or refine (revision of existing). The trigger phrasing in each skill picks.
+- `steve-jobs-make` — for what does not exist yet.
+- `steve-jobs-refine` — for what does, and needs judgment.
+- `steve-jobs-pitch` — for what is ready to be introduced.
 
-## Worked example: a tool called `huddle`
+These are not writing templates. They are three modes of product work. You describe the work, and the right one takes over.
 
-`huddle` is a standup-killer that lives in your repo.
+### `make` — Decide what should exist
 
-**`/steve-jobs-make`** drafts the v1 PRD. It opens with the keynote line ("a standup that lives in your repo, not a meeting"), three concrete daily-use scenes, an explicit "not building" list (no web UI, no real-time presence, no comments on other people's huddles), and a sharp success metric: a four-person team uses it ten weekdays in a row without prompting.
+For a new product, agent workflow, research direction, PRD, name, or v1 plan. Before producing the artifact, the skill interrogates the idea: what it is really for, who it serves in what specific moment, what broken status quo it replaces, the one risky bet it depends on, and what the user experiences when the system is wrong. For anything AI-shaped, that last question *is* the product. The artifact is a byproduct of the thinking, not the point of it.
 
-**`/steve-jobs-refine`** reviews the README. It returns about 400 words: what the README is trying to be, two specific quoted strengths, two specific weaknesses, and the one move that lifts the work — usually structural. For huddle: *swap the file-structure section and the demo. You're explaining the artifact before showing it.*
+### `refine` — Raise the standard
 
-**`/steve-jobs-pitch`** writes the launch tweet (above), the README hero, and the demo script. Same product, three shapes of output.
+For work that already exists — a draft, a feature, a launch candidate, a strategic direction. The skill reviews the real artifact, not the description of it. It evaluates direction before execution. When asked whether to ship, add a feature, or keep going, it makes a binary call and names the one move — almost always a cut — that takes the work from competent to memorable. When something feels wrong but you cannot say why, it pattern-matches against documented Apple-era failures so the diagnosis has a name.
 
-## Silent mentor, not impersonation
+### `pitch` — Make the world want it
 
-Most "Steve Jobs AI" projects impersonate him: manufactured quotes, theatrical bluntness, "as Steve would say" preambles. That works for thinking out loud and fails when you have to ship. A launch tweet doesn't need a Jobs character delivering it; it needs to be a great launch tweet.
+For introducing the thing — launch tweets, README heroes, Show HN posts, demo scripts, release notes, conference proposals, elevator pitches. The skill verifies every concrete claim, builds the four assets first (the keynote line, the three, the demo moment, the friend message), and treats every launch artifact as a translation of those — not a fresh draft. The job is to make the value obvious in 30 seconds.
 
-These skills make the principles invisible. Each `SKILL.md` forbids roleplay framing and theatrical persona moves.
+## Example prompts
 
-For the impersonation version (Jobs as a counterpart you talk things through with), see [`steve-jobs-skill`](https://github.com/vikranthreddimasu/steve-jobs-skill). Use that for direction. This stack is for the artifacts.
+```text
+I have an idea for an AI coding agent that reviews migrations
+before deploy. What should v1 be?
+```
 
-## How each skill thinks
+Routes to `make`. The skill should force the customer moment, the antagonist, the one bet, the failure mode, and the ruthless v1 — before producing a single bullet.
 
-Each runs a pipeline, not a checklist:
+```text
+Review this agent workflow. Be honest about whether it is ready
+to ship.
+```
 
-- **`make`** — interrogate the project → find the soul → force the cut → pass the gate → prototype the conviction
-- **`refine`** — see the thing → interrogate the direction → make the binary call → name the one move → reach for a tool when stuck
-- **`pitch`** — draft the four assets (keynote line, the three, the demo, the friend message) → ride them on a 7-beat arc → adapt to format
+Routes to `refine`. The skill should look at the actual workflow, make the readiness call, name the weak point, and give the one move that lifts it before launch.
 
-Format templates (PRD shape, launch tweet structure, etc.) sit on top of the pipelines.
+```text
+Write the Show HN title and post for this repo.
+```
 
-## Built on primary sources
+Routes to `pitch`. The skill should verify the claims, find the keynote line, build the demo moment, and write the post — not three options, the post.
 
-The `references/` folder is the source material — primary research, not LLM lore:
+## Source material
 
-- `research-report.md` — about 10k words, around 60 sources from Isaacson, Schlender/Tetzeli, Segall, Fadell, Hertzfeld, plus Jobs's own keynotes and interviews
-- `keynote-case-studies.md` — six keynotes broken down by what move did the load-bearing work (1984 Mac, iMac, iPod, iPhone, MacBook Air, iPad)
-- `failure-patterns.md` — nine Apple-era anti-patterns with trigger phrases (Lisa, NeXT cube, Apple Cube, MobileMe, Antennagate, App Store reversal, options backdating, cancer treatment delay, personal cost)
-- `product-case-studies.md` — four build cases (1997 product cull, iMac, iPod, Apple Retail)
+The skills are built on a research base packaged in `references/`:
 
-Skills load these only when the question calls for it.
+- `research-report.md` — the operating system itself: customer experience first, focus, integrated stack, liberal arts plus technology, simplicity, invisible craft, talent density, small teams, DRI ownership, self-cannibalization, keynote craft, taste over data, crisis as clarity, and the limits of conviction.
+- `product-case-studies.md` — the build decisions: the 1997 product cull, iMac, iPod, Apple Retail.
+- `keynote-case-studies.md` — the launches: Macintosh, iMac, iPod, iPhone, MacBook Air, iPad.
+- `failure-patterns.md` — the traps: Lisa, NeXT cube, Apple Cube, MobileMe, Antennagate, the App Store reversal, options backdating, cancer delay, and the personal-cost pattern.
+
+The skills do not load all of this every time. They reach for the references when the work calls for them.
 
 ## Repo structure
 
-```
+```text
 steve-jobs-stack/
 ├── README.md
 ├── LICENSE
 ├── install.sh
 ├── references/
-├── steve-jobs-make/SKILL.md
-├── steve-jobs-refine/SKILL.md
-└── steve-jobs-pitch/SKILL.md
+│   ├── failure-patterns.md
+│   ├── keynote-case-studies.md
+│   ├── product-case-studies.md
+│   └── research-report.md
+├── steve-jobs-make/
+│   └── SKILL.md
+├── steve-jobs-refine/
+│   └── SKILL.md
+└── steve-jobs-pitch/
+    └── SKILL.md
 ```
 
-Each `SKILL.md` is a single editable file. Fork it, change it, make it yours.
+Each skill is a single editable `SKILL.md`. Fork it, tune it, and make the OS fit the way you want your agents to work.
 
 ## License
 
