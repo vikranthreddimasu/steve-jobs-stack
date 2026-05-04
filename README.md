@@ -12,11 +12,11 @@ This stack is built for that. Three skills that turn your coding agent into some
 
 I wanted an AI that thought *with* me, not for me.
 
-Most agent workflows are powerful but shapeless. Ask for an idea, get ten. Ask for a plan, get a long plan. Ask for product feedback, get a polite list of improvements. The model is doing work. It is not applying judgment. It is not asking what should exist, what should be cut, what the user actually feels in the broken moment, or whether the work has a story strong enough to survive contact with the world.
+Most agent workflows are powerful but shapeless. Ask for an idea, get ten. Ask for a plan, get a long plan. Ask for product feedback, get a polite list of improvements. The model is doing work but it is not applying judgment. It is not asking what should exist, what should be cut, what the user actually feels in the broken moment, or whether the work has a story strong enough to survive contact with the world.
 
 I wanted structure for that. A path.
 
-Steve Jobs became the lens because his transferable skill was not charisma or cruelty. It was taste as discipline: start with the experience, force the cut, make the product and the story one thing, refuse to hide weak thinking behind more features. He was wrong plenty of times. The Cube, MobileMe, Antennagate, the App Store reversal. Those failure patterns are part of this, not embarrassments to skip over.
+Steve Jobs became the lens because his transferable skill was not charisma or cruelty. It was taste as discipline: start with the experience, force the cut, make the product and the story one thing, refuse to hide weak thinking behind more features. He was also wrong plenty of times. But, those failure patterns are part of this, not embarrassments to skip over.
 
 It matters most in AI. *AI-powered X* is not a product. A model is not an experience. A clever agent loop is not a reason for anyone to care. The job is to decide what actually changes for the user when the system exists, and to be honest when the answer is nothing yet.
 
@@ -28,13 +28,13 @@ The Steve Jobs Stack is my attempt to make that thinking reusable. Not a persona
 
 I also maintain [`vikranthreddimasu/steve-jobs-skill`](https://github.com/vikranthreddimasu/steve-jobs-skill), a *persona* skill: ask Jobs a question, get a Jobs-shaped answer (mental models, decision heuristics, expression DNA). My English translation of [`alchaincyf/steve-jobs-skill`](https://github.com/alchaincyf/steve-jobs-skill) by [Huashu (花叔)](https://github.com/alchaincyf), with full credit to the original author.
 
-**This stack is the discipline version:** the principles disappear into your PRDs, reviews, and launch copy. **The skill is the conversational version:** Jobs's voice helps you think out loud about a question. They compose well — use the stack to decide what to build, the skill to think about it.
+**This stack is the discipline version:** the principles disappear into your PRDs, reviews, and launch copy. **The skill is the conversational version:** Jobs's voice helps you think out loud about a question. They compose well, you can use the stack to decide what to build, the skill to think about it.
 
 ---
 
 ## Setup
 
-**One command (recommended).** Installs all three skills into every coding agent you have — Claude Code, Cursor, Codex, OpenCode, and ~50 others — via the [open agent skills CLI](https://github.com/vercel-labs/skills):
+**One command (recommended).** Installs all three skills into every coding agent you have - via the [open agent skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
 npx skills add vikranthreddimasu/steve-jobs-stack --all
@@ -42,7 +42,7 @@ npx skills add vikranthreddimasu/steve-jobs-stack --all
 
 Re-runnable. Add `-g` for global install across all projects, drop `--all` to choose interactively, or pass `--skill steve-jobs-make` to install just one.
 
-**No terminal? Paste this in your coding agent.** Claude Code, Cursor, and Codex all handle it from there.
+**If it's any easier, paste this in your coding agent.** Claude Code, Cursor, and Codex all handle it from there.
 
 ```text
 Install the Steve Jobs Stack from this repo:
